@@ -19,7 +19,6 @@ public class Main {
         }
         return swapCount;
     }
-
     static void swap (int[] A, int i, int j){
         int temp = A[i];
         A[i] = A[j];
@@ -30,6 +29,8 @@ public class Main {
         int N = sc.nextInt();
         int[] A = new int[N];
         Arrays.setAll(A, i -> sc.nextInt());
+        sc.close();
+
         int swapCount = bubbleSort(A, N);
         for(int i = 0; i < N; i++){
             System.out.print(A[i]);
